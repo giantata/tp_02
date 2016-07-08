@@ -1,0 +1,304 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
+@import url(normalize.css);
+  
+*{
+	box-sizing: border-box;
+	/* descuenta del width y height, lo sumado en padding y border */
+}
+ul, li{
+	list-style: none; /* elimina las viñetas */
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+}
+body{
+	font-family: "realyway", sans-serif;
+	/*margin: 0;*/
+	background-image: url("../imagenes/363928.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	/*max-width:2500px;*/
+	margin: 5% 15% 5%;
+}
+
+.cleaner {
+	clear: both;
+}
+.container{
+	max-width: 1200px;
+	margin: auto;
+	color: #FFFFFF;
+}
+
+/* Header*/
+
+.datos{
+	margin: 0;
+	/*border-radius: 50%;*/
+	color: #FFFFFF;
+}
+.fa-github, .fa-instagram{
+	font-size: 5px;
+}
+.datos h2{
+	font-size: 25px;
+	/*font-weight: bold;*/
+	margin-bottom: 3%;
+	color: #FFFFFF;
+}
+
+.datos p{
+	margin-bottom:5%;
+	font-size: 15px;
+	color: #FFFFFF;
+	/*background-color: #3B29C4*/
+}
+
+.main-header{
+   max-width: 1200px;
+   margin: auto;
+   padding: -10px 0;
+   /*border: dashed 1px green;*/
+}
+
+.imagen img{
+   float: right;
+   border-radius: 100%;
+   width: 20%;
+}
+
+.p1-email {
+	font-size: 10px;
+	color: #379144
+}
+
+/* Profile */
+
+.profile {
+	margin:5% 7%;
+	text-align: justify;
+	/*border: dashed 1px green;*/
+}
+
+.text p{
+	font-size: 20px;
+	margin: 5;
+	color: #FFFFFF;
+}
+
+.p1-email {
+	font-size: 10px;
+	color: #379144
+}
+.fa-user{
+	color: red;
+	/*border: dashed 5px green;*/
+}
+.profile {
+	margin:5% 0;
+	position: relative;
+	color: #FFFFFF;
+}
+
+.profile h2{
+    position: absolute;
+    left: 50px;
+    color: #FFFFFF;
+}
+
+/*.profile i{
+	color: red;
+}*/
+
+/* skills */
+
+.container-skills{
+	/*border: dashed 3px red;*/
+	color: #FFFFFF;
+	padding: 0px 80px;
+	
+}
+.imagen-2 {
+	position: relative;
+	width: 20%;
+	margin: auto; /*Coloca la imagen en el centro*/
+	/*position: relative;*/
+	/*border: dashed 1px green;*/
+}
+.h2, h4{
+	text-align: center;
+ 	/*margin-top: 0 10%;*/
+ 	color: FFFFFF;
+ 	font-size: 25px;
+ 	/*top: -100px;*/
+ 	/*border: dashed 2px #5A6CF0;*/
+}
+.skill i{
+	position: center;
+	width: 20%;
+}
+.skill{
+	width: 33%;
+	float: left;
+	/*padding: 0 25px;*/
+	text-align: center;
+	/*border: solid 1px green;*/
+}
+
+
+/*Education*/
+
+.education {
+	margin-top: 20px;
+	/*border: dashed 1px green;*/
+	color: #FFFFFF;
+}
+
+.education i{
+		/*border: dashed 1px green;*/
+		padding: 0 10px;
+}
+.education h2{
+	/*width: 80%;*/
+	text-align: center;
+	/*border: dashed 1px green;*/
+}
+.education-text{
+	font-size: 20px;
+}
+.imagen-3 {
+	position: relative;
+	/*width: 20%;*/
+	margin: auto;
+	text-align: center;
+}
+/*Footer-Contacto*/
+
+.main-footer{
+	padding: 50px 0;
+	/*border: dashed 1px red;*/
+}
+
+.title-services h2{
+	float:left;
+	color: #F70B3D;
+
+}
+.left-data{
+	float: left;
+	width: 48%;
+}
+
+.left-data input,
+.right-data textarea{
+	display: block;
+	width: 100%;
+	color: #FFFFFF;
+	background-color: black;
+}
+
+.left-data input{
+	height: 60px;
+	margin-bottom: 21px;
+	outline: none;
+}
+
+.right-data textarea{
+	height: 140px;
+	outline: none;
+	/*box-shadow: none;*/
+}
+
+.right-data{
+	float: right;
+	width: 48%;
+}
+
+.main-footer button{
+	display: block;
+	margin: auto;
+	width: 200px;
+	height: 40px;
+	/*border: solid 1px green;*/
+	box-shadow: 0 0 5px ;
+	border-radius: 5px;
+}
+
+/*******************
+****MEDIA QUERY****
+******************/
+/*******MEDIUN*********/
+
+@media (max-width: 800px){
+
+.main-header, .container {
+	width: 95%;
+	}
+.imagen-img{
+   border-radius: 100%;
+   }
+.fa-github, .fa-instagram{
+	font: 7%;
+	display: inline-block;
+}
+/*border: d
+.p1-email {
+	font-size: 5%;
+	}
+.datos h2, p{
+	font-size: 5%;
+    }
+.profile{
+	margin:5% 7%;
+	text-align: justify;
+	}
+.profile h2{
+    position: absolute;
+    left: 30%;
+	}
+
+
+
+
+
+}
+
+/*@media (max-width: 800px){
+.datos, main-header {
+    width: 100%;
+    text-align: left;
+    margin: 0; 
+ }
+}
+.datos-personales ul,h2,p, {
+      float: none;
+      width: 100%;
+      text-align: left; 
+ }
+
+.foto {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    position: relative; 
+ }
+
+.skills i {
+    font-size: 15px !important; 
+    width: 15%;
+
+ }
+
+.skills h4 {
+    font-size: 12px; 
+
+ }
+
+.contact {
+    width: 98%;
+    float: none; } 
+ }
+
+
